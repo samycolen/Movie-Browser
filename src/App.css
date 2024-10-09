@@ -1,0 +1,252 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: rgb(31, 3, 68);
+}
+
+/*For Total Page*/
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main Page Header and input and default button*/
+
+.mainPageHeader {
+  color: white;
+  font-family: cursive;
+  margin-top: 20%;
+  justify-content: center;
+  margin-left: 41%;
+  margin-bottom: 50px;
+}
+
+.mainPageHeaderAsLink {
+  text-decoration: none;
+}
+
+.input {
+  border-radius: 80px;
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  top: 47%;
+  z-index: 1;
+  padding: 20px;
+}
+
+.downButtonDiv {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+.downButton {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 1000;
+  border-radius: 50px;
+  background-color: rgb(31, 3, 68);
+  border: white solid;
+  color: white;
+}
+
+/*Home Page Header*/
+
+.navBarUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  color: white;
+  width: 100%;
+  background-color: rgb(22, 2, 47);
+  padding: 5px 20px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navBarUpLeft {
+  flex: 1;
+  text-align: left;
+}
+
+.navBarUpCenter {
+  flex: 2;
+  text-align: center;
+}
+
+.navBarUpCenter h1 {
+  font-size: 25px;
+  margin-left: 47%;
+  font-family: cursive;
+}
+
+/*Home Page Header's Right Section*/
+
+.navBarUpRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 40px;
+  width: 30%;
+}
+
+/*Search Section*/
+
+.searchSection {
+  position: relative;
+}
+
+.searchSectionSearchBar {
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  margin: 20px;
+  size: 20%;
+}
+
+.togglingSearchBarContainer {
+  display: flex;
+  align-items: center;
+  margin-top: px;
+  justify-content: center;
+}
+
+/* Filter Section */
+
+.filterSection {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.filterSectionDropdown {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  z-index: 10;
+  width: 150px;
+}
+
+.filterSection button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.filterSection button:focus {
+  outline: none;
+}
+
+.filterSection.filterSectionDropdown.show {
+  display: flex;
+}
+
+.dropdownOption {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}.dropdownOption:hover {
+}
+
+.containerWithoutNabBar {
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 95%;
+}
+.middleStripGenre {
+  background-color: white;
+}
+.middleStripYear {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.navBarDown {
+  color: white;
+  width: 100%;
+  position: fixed;
+  padding: 3px 0;
+  margin-top: 80px;
+  padding-left: 60px;
+  z-index: 1000;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(20px);
+}
+
+/* Messages CSS*/
+
+.noMoviesFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center the message */
+  color: white;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+/*Movie Container CSS*/
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+  border: 1px;
+  border-color: white;
+  margin-top: 100vh;
+}
+
+.movieCard {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 4px 10px white;
+  border-radius: 8px;
+  text-align: center;
+  text-wrap: wrap;
+  width: 306px;
+  padding-bottom: 0px;
+}
+
+.movieCard h2 {
+  padding: 1px;
+}
+
+.MoviewPoster {
+  margin-top: 4px;
+}
