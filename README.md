@@ -13,8 +13,8 @@ A basic movie browser application built with React. This application allows user
 
 - React
 - Axios
-- CSS (or styled-components, if applicable)
-- [Any other libraries or tools you used]
+- CSS
+
 
 ## Installation
 
